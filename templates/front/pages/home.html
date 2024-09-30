@@ -1,0 +1,382 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+      content="Hardkode Technologies is a professionally managed dynamic Web and App Development Company based in Odisha, India.">
+<meta name="keywords"
+      content="Hardkode, Coding, Solutions, Technologies, Python, PHP, NodeJS, ReactJS, App Development, Website Development">
+<meta name="author" content="Hardkode Technologies">
+<title>Hardkode Technologies - Think Hard, Think Code.</title>
+{% endblock %}
+
+{% block content %}
+<section class="wrapper bg-gradient-primary">
+    <div class="container pt-10 pt-md-14">
+        <div class="row gx-2 gy-10 align-items-center">
+            <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start order-2 order-lg-0"
+                 data-cues="slideInDown" data-group="page-title" data-delay="600">
+                <h1 class="display-1 mb-5 mx-md-10 mx-lg-0">Create a powerful but effortless website for <br/><span
+                        class="typer text-primary text-nowrap" data-delay="100"
+                        data-words="your business.,your portfolio.,your startup.,digital marketing."></span><span
+                        class="cursor text-primary" data-owner="typer"></span></h1>
+                <p class="lead fs-23 mb-7">Build your website in minutes with the help of countless amazing features of Hardkode.</p>
+                <div class="d-flex justify-content-center justify-content-lg-start mb-4" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+                    <span><a href="{% url 'contact' %}" target="_self" class="btn btn-lg btn-primary rounded-pill me-2">Enquire Now</a></span>
+                </div>
+            </div>
+            <div class="col-lg-6 ms-auto position-relative">
+                <div class="row g-4">
+                    <div class="col-4 d-flex flex-column ms-auto" data-cues="fadeIn" data-group="col-start"
+                         data-delay="900">
+                        <div class="ms-auto mt-6">
+                            <img class="img-fluid rounded shadow-lg" src="{% static '/assets/img/demos/vc1.jpg' %}" srcset="{% static '/assets/img/demos/vc1@2x.jpg' 2x %}" alt=""/>
+                        </div>
+                        <div class="ms-auto mt-4">
+                            <img class="img-fluid rounded shadow-lg" src="{% static '/assets/img/demos/vc2.jpg' %}" srcset="{% static '/assets/img/demos/vc2@2x.jpg' 2x %}" alt=""/>
+                        </div>
+                        <div class="ms-auto mt-4">
+                            <img class="img-fluid rounded shadow-lg" src="{% static '/assets/img/demos/vc3.jpg' %}" srcset="./assets/img/demos/vc3@2x.jpg' 2x %}" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-4" data-cues="fadeIn" data-group="col-middle">
+                        <div><img class="w-100 img-fluid rounded shadow-lg" src="{% static '/assets/img/demos/vc4.jpg' %}"
+                                  srcset="{% static '/assets/img/demos/vc4@2x.jpg' 2x %}" alt=""/></div>
+                        <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="{% static '/assets/img/demos/vc5.jpg' %}"
+                                  srcset="{% static '/assets/img/demos/vc5@2x.jpg' 2x %}" alt=""/></div>
+                        <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="{% static '/assets/img/demos/vc6.jpg' %}"
+                                  srcset="{% static '/assets/img/demos/vc6@2x.jpg' 2x %}" alt=""/></div>
+                    </div>
+                    <div class="col-4 d-flex flex-column" data-cues="fadeIn" data-group="col-end" data-delay="900">
+                        <div class="mt-8"><img class="img-fluid rounded shadow-lg" src="{% static '/assets/img/demos/vc7.jpg"
+                                               srcset="{% static '/assets/img/demos/vc7@2x.jpg' 2x %}" alt=""/></div>
+                        <div class="mt-4 mb-10"><img class="img-fluid rounded shadow-lg"
+                                                     src="{% static '/assets/img/demos/vc8.jpg"
+                                                     srcset="{% static '/assets/img/demos/vc8@2x.jpg' 2x %}" alt=""/></div>
+                    </div>
+                </div>
+                <div class="position-relative mt-n20 mb-20" data-cue="fadeIn" data-delay="1800">
+                    <div class="btn btn-circle btn-fuchsia disabled ripple position-absolute counter-wrapper flex-column d-none d-xxl-flex"
+                         style="bottom: 0; right: -8%; width: 120px; height: 120px;">
+                        <h3 class="fs-26 text-white mt-n1 mb-0">New</h3>
+                        <p>Tech.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper bg-gradient-reverse-primary pb-5 mb-5">
+    <div class="container pt-14 pt-md-16">
+        <div class="row text-center">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h2 class="fs-16 text-uppercase text-muted mb-3">What We Do?</h2>
+                <h3 class="display-4 mb-10 px-xl-10">The service we offer is specifically designed to meet your
+                    needs.</h3>
+            </div>
+        </div>
+        <div class="position-relative">
+            <div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
+                 style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
+            <div class="shape bg-dot primary rellax w-16 h-17" data-rellax-speed="1"
+                 style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
+            <div class="row gx-md-5 gy-5 text-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <img src="{% static '/assets/img/icons/lineal/browser.svg' %}"
+                                 class="svg-inject icon-svg icon-svg-md text-red mb-3" alt=""/>
+                            <h4>Web Development</h4>
+                            <p class="mb-2">Building corporate, ecommerce, social networking, CRM, HRM.. websites using
+                                latest technologies.</p>
+                            <a href="#" class="more hover link-red">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <img src="{% static '/assets/img/icons/lineal/design.svg' %}"
+                                 class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt=""/>
+                            <h4>App Development</h4>
+                            <p class="mb-2">Building apps using popular app frameworks (react js, flutter, ionic ), PWA
+                                and native app development (Android and iOS).</p>
+                            <a href="#" class="more hover link-yellow">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <img src="{% static '/assets/img/icons/lineal/levels.svg' %}"
+                                 class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt=""/>
+                            <h4>Managed Hosting</h4>
+                            <p class="mb-2">Configuration & Optimization of the Hardware, Core Server Software, Network
+                                & security.</p>
+                            <a href="#" class="more hover link-blue">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <img src="{% static '/assets/img/icons/lineal/chat-2.svg' %}"
+                                 class="svg-inject icon-svg icon-svg-md text-green mb-3" alt=""/>
+                            <h4>SEO</h4>
+                            <p class="mb-2">Webpage optimization, Page Linking, Sitemap Generation, Broken Link check,
+                                Keyword Search, Search Engine Submissions.</p>
+                            <a href="#" class="more hover link-green">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-md-5 gy-5 text-center py-5">
+                <div class="col-md-12 col-xl-12">
+                    <span>
+                        <a href="{% url 'service' %}" target="_self" class="btn btn-primary rounded-pill me-2">View All Services</a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-light angled upper-start lower-start">
+    <div class="container py-14 pt-md-17 pb-md-15">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 mb-lg-22 mb-xl-24 align-items-center">
+            <div class="col-lg-7">
+                <figure><img class="w-auto" src="{% static '/assets/img/illustrations/i6.png' %}"
+                             srcset="{% static '/assets/img/illustrations/i6@2x.png' 2x %}" alt=""/></figure>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="fs-16 text-uppercase text-muted mb-3">Why Choose Us?</h2>
+                <h3 class="display-4 mb-7">We bring solutions to make life easier for our clients.</h3>
+                <div class="accordion accordion-wrapper" id="accordionExample">
+                    <div class="card plain accordion-item">
+                        <div class="card-header" id="headingOne">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne"> Professional Design
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>We have a team of highly skilled professionals, who will develop unique designs using high level coding using the latest technologies as per requirement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card plain accordion-item">
+                        <div class="card-header" id="headingTwo">
+                            <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo"> Top-Notch Support
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>We bring solutions to make our clients life easier. Our support team will help you to resolve issues as soon as possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card plain accordion-item">
+                        <div class="card-header" id="headingThree">
+                            <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree"> Value for Money
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>We make your spending stress-free for you to have the perfect control.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-gradient-primary">
+    <div class="container py-5 pt-md-8 pb-md-10">
+        <div class="position-relative mt-8 mt-lg-n23 mt-xl-n25">
+            <div class="row text-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+                    <h2 class="fs-16 text-uppercase text-muted mb-3">Our Team</h2>
+                    <h3 class="display-4 mb-10 px-md-13 px-lg-4 px-xl-0">Think unique and be innovative. Make a
+                        difference with Sandbox.</h3>
+                </div>
+            </div>
+            <div class="position-relative">
+                <div class="shape bg-dot blue rellax w-16 h-17" data-rellax-speed="1"
+                     style="bottom: 0.5rem; right: -1.7rem; z-index: 0;"></div>
+                <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1"
+                     style="top: 0.5rem; left: -1.7rem; z-index: 0;"></div>
+                <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true"
+                     data-items-xxl="4" data-items-lg="3" data-items-md="2" data-items-xs="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            {% for team in hk_team %}
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="rounded-circle w-15 mb-4"
+                                                 src="{{team.picture.url}}" alt="{{team.user.full_name}}"/>
+                                            <h4 class="mb-1">{{team.user.full_name}}</h4>
+                                            <div class="meta mb-2">{{team.designation}}</div>
+                                            <nav class="nav social mb-0">
+                                                {% if team.fb_url %}
+                                                <a href="{{team.fb_url.url}}"><i class="uil uil-facebook-f"></i></a>
+                                                {% endif %}
+                                                {% if team.tw_url %}
+                                                <a href="{{team.tw_url.url}}"><i class="uil uil-twitter"></i></a>
+                                                {% endif %}
+                                                {% if team.gh_url %}
+                                                <a href="{{team.gh_url.url}}"><i class="uil uil-github"></i></a>
+                                                {% endif %}
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-light mt-2 pt-2">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+                <h2 class="display-4 mt-10 mb-3">Our Community</h2>
+                <p class="lead fs-lg mb-6">Customer satisfaction is our major goal. See what our clients are saying about our services.</p>
+            </div>
+        </div>
+        <div class="row gx-xl-12 gy-10">
+            <div class="col-xl-12">
+                <div class="position-relative">
+                    <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
+                         style="top: -0.7rem; right: -1.7rem;"></div>
+                    <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1"
+                         style="bottom: -0.5rem; left: -1.4rem;"></div>
+                    <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-md="3"
+                         data-items-xs="3">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                {% for testimonials in all_testimonials %}
+                                <div class="swiper-slide">
+                                    <div class="item-inner">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <blockquote class="icon mb-0">
+                                                    <p>{{testimonials.message|safe}}</p>
+                                                    <div class="blockquote-details">
+                                                        <img class="rounded-circle w-12" src="{{testimonials.client.userprofile.picture.url}}" alt=""/>
+                                                        <div class="info">
+                                                            <h5 class="mb-0">{{testimonials.client.full_name}}</h5>
+                                                            <span class="mb-0">{{testimonials.client.userprofile.designation}} -</span>
+                                                            <span class="mb-0">{{testimonials.client.userprofile.company_name}}</span>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center pt-5">
+            <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+                <a href="{% url 'testimonial' %}" class="btn btn-primary rounded-pill">All Testimonials</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper bg-light">
+    <div class="container py-14 py-md-10">
+        <div class="card bg-soft-primary rounded-4">
+            <div class="card-body p-md-10 p-xl-11">
+                <div class="row gx-lg-8 gx-xl-12 gy-10">
+                    <div class="col-lg-6">
+                        <h3 class="display-4 mb-4">Frequently Asked Questions</h3>
+                        <p class="lead fs-lg mb-0">If you don't see an answer to your question, please send us a message through <a href="{% url 'contact' %}" target="_self">contact form</a>.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-wrapper" id="accordionExample">
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingFour">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">How do I reset my Account
+                                        password?
+                                    </button>
+                                </div>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>You will find a "Forgot Password" link in our Login Page. Any issues with invoices, please send us a message through <a href="{% url 'contact' %}" target="_self">contact form</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingOne">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">How do I get my
+                                        subscription invoice?
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Login to your account and go to invoices section to download all your invoices. Any issues with invoices, please send us a message through <a href="{% url 'contact' %}" target="_self">contact form</a>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingTwo">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">Are there any discounts
+                                        for people in need?
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Yes, you will get 20% discount on all services. Please use the coupon code <strong>DISHK10</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingThree">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">Do you offer a special discount for NGO?
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Yes, if you run a NGO, then we you 80% discount on all services. Please use the coupon code <strong>DISHK80</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static %}
+<header class="wrapper bg-soft-primary">
+    <div class="alert bg-primary text-white fade show rounded-0 mb-0 text-center" role="alert">
+        <div class="container">
+            <div class="alert-inner p-0">
+                <marquee><span class="badge badge-lg bg-white text-primary text-uppercase rounded me-2">Limited Period Offer</span>
+                    Hurry Up!!! 10% Discount on all services.
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+        <div class="container flex-lg-row flex-nowrap align-items-center">
+            <div class="navbar-brand w-100">
+                <a href="{% url 'home' %}">
+                    <img class="img-fluid logo" src="{% static '/assets/img/logo.png' %}"
+                         alt="Hardkode Technologies Logo"/>
+                </a>
+            </div>
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                <div class="offcanvas-header d-lg-none">
+                    <h3 class="text-white fs-30 mb-0">Hardkode</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown dropdown-mega">
+                            <a class="nav-link" href="{% url 'home' %}" target="_self">Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega">
+                            <a class="nav-link" href="{% url 'about' %}" target="_self">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega">
+                            <a class="nav-link" href="{% url 'service' %}" target="_self">Services</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega">
+                            <a class="nav-link" href="{% url 'project' %}" target="_self">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown">Our &#10084;</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega">
+                            <a class="nav-link" href="{% url 'contact' %}" target="_self">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas-footer d-lg-none">
+                        <div>
+                            <a href="mailto:admin@hardkode.com" target="_blank"
+                               class="link-inverse">admin@hardkode.com</a>
+                            <br/> 0091 (801) 054 3181 <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-other w-100 d-flex ms-auto">
+                <ul class="navbar-nav flex-row align-items-center ms-auto">
+                    <li class="nav-item d-lg-none">
+                        <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

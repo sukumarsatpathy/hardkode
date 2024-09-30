@@ -1,0 +1,147 @@
+{% extends 'front/base.html' %}
+{% load static %}
+{% block meta %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+      content="Hardkode Technologies is a professionally managed dynamic Web and App Development Company based in Odisha, India.">
+<meta name="keywords"
+      content="Hardkode, Coding, Solutions, Technologies, Python, PHP, NodeJS, ReactJS, App Development, Website Development">
+<meta name="author" content="Hardkode Technologies">
+<title>Services - Hardkode Technologies</title>
+{% endblock %}
+{% block content %}
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 col-xl-6 col-xxl-5 mx-auto mb-11">
+                <h1 class="display-1 mb-3">Our Services</h1>
+                <p class="lead px-lg-7 px-xl-7 px-xxl-6">We are a creative company that focuses on establishing <span
+                        class="underline">long-term relationships</span> with clients.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper bg-light angled upper-end">
+    <div class="container">
+        <div class="row mb-8">
+            <div class="col-12 mt-n20">
+                <figure class="rounded"><img src="{% static '/assets/img/photos/about5.jpg' %}"
+                                             srcset="{% static '/assets/img/photos/about5@2x.jpg' 2x %}" alt=""/>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-light">
+    <div class="container py-10 py-md-12">
+        <div class="row text-center">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h2 class="fs-16 text-uppercase text-primary mb-3">What We Do?</h2>
+                <h3 class="display-3 mb-10 px-xxl-10">The service we offer is specifically designed to meet your
+                    needs.</h3>
+            </div>
+        </div>
+        <div class="row gx-lg-8 gx-xl-12 gy-11 px-xxl-5 text-center d-flex align-items-end py-5">
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i25.png' %}" srcset="{% static '/assets/img/illustrations/i25@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>Web Development</h3>
+                    <p class="mb-2">Building corporate, ecommerce, social networking, CRM, HRM.. websites using latest technologies.</p>
+                    <a href="{% url 'web-development' %}" class="more hover">Know More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i26.png' %}" srcset="{% static '/assets/img/illustrations/i26@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>App Development</h3>
+                    <p class="mb-2">Building apps using popular app frameworks (react js, flutter, ionic ), PWA and native app development.</p>
+                    <a href="#" class="more hover">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i20.png' %}" srcset="{% static '/assets/img/illustrations/i20@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>Managed Hosting</h3>
+                    <p class="mb-2">Configuration & Optimization of the Hardware, Core Server Software, Network & security, Regular Server Health Check.</p>
+                    <a href="#" class="more hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-lg-8 gx-xl-12 gy-11 px-xxl-5 text-center d-flex align-items-end py-5">
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i24.png' %}" srcset="{% static '/assets/img/illustrations/i24@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>Search Engine Optimization</h3>
+                    <p class="mb-2">Webpage optimization, Page Linking, Sitemap Generation, Broken Link check, Keyword Search, SES, etc..</p>
+                    <a href="#" class="more hover">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i19.png' %}" srcset="{% static '/assets/img/illustrations/i19@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>Digital Marketing</h3>
+                    <p class="mb-2">Improving your sales by google ads, microsoft ads, facebook ads, linkedin ads, twitter ads, etc..</p>
+                    <a href="#" class="more hover">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="px-md-15 px-lg-3">
+                    <figure class="mb-6">
+                        <img class="img-fluid" src="{% static '/assets/img/illustrations/i22.png' %}" srcset="{% static '/assets/img/illustrations/i22@2x.png' 2x %}" alt=""/>
+                    </figure>
+                    <h3>Graphic Design</h3>
+                    <p class="mb-2">Creating business logos, visiting cards, flyers, brochures, banners, standees, ad banners, etc...</p>
+                    <a href="#" class="more hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" data-image-src="{% static '/assets/img/map.png' %}">
+    <div class="container py-10 pb-md-18">
+        <div class="row pt-md-12">
+            <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto">
+                <h2 class="fs-15 text-uppercase text-muted mb-3">Join Our Community</h2>
+                <h3 class="display-4 mb-8 px-lg-12">We are trusted by over 45 clients. Join them now and grow your
+                    business.</h3>
+            </div>
+        </div>
+        <div class="row pb-md-12">
+            <div class="col-md-10 col-lg-9 col-xl-7 mx-auto">
+                <div class="row align-items-center counter-wrapper gy-4 gy-md-0">
+                    <div class="col-md-4 text-center">
+                        <h3 class="counter counter-lg text-primary">107</h3>
+                        <p>Completed Projects</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3 class="counter counter-lg text-primary">7</h3>
+                        <p>Ongoing Projects</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3 class="counter counter-lg text-primary">12</h3>
+                        <p>Experienced Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

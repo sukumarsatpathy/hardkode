@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Block Starts Here -->
+    {% block meta %}
+
+    {% endblock %}
+    <!-- Meta Block Ends Here -->
+
+    <link rel="shortcut icon" href="{% static '/assets/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/colors/green.css' %}">
+    <link rel="preload" href="{% static '/assets/css/fonts/thicccboi.css' %}" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <!-- Header Starts Here -->
+        {% include 'front/includes/header.html' %}
+        <!-- Header Ends Here -->
+
+        <!-- Content Section Starts Here -->
+        {% block content %}
+
+        {% endblock %}
+        <!-- Content Section Ends Here -->
+
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer class="bg-navy text-inverse">
+        {% include 'front/includes/footer.html' %}
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+      </svg>
+    </div>
+
+    <script src="{% static '/assets/js/plugins.js' %}"></script>
+    <script src="{% static '/assets/js/theme.js' %}"></script>
+</body>
+
+</html>
